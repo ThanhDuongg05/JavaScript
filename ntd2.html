@@ -15,18 +15,80 @@
         <fieldset>
             <legend>Personal information</legend>
             <p>
-                <label for="firstname">Enter your first name: </label>
+                <label for="firstname">Enter your First Name: </label>
                 <input type="text" id="firstname" name="firstname"/>
             </p>
 
             <p>
-                <label for="lastname">Enter your last name: </label>
+                <label for="lastname">Enter your Last Name: </label>
                 <input type="text" id="lastname" name="lastname"/>
+            </p>
+
+            <p>
+                <label for="email">Enter your Email: </label>
+                <input type="text" id="email" name="email"/>
+            </p>
+
+            <p>
+                <label for="phonenumber">Enter your Phone Number: </label>
+                <input type="text" id="phonenumber" name="phonenumber"/>
+            </p>
+
+            <p>
+                <label for="age">Enter your Age: </label>
+                <input type="text" id="age" name="age"/>
             </p>
         </fieldset>
 
         <br/>
+        <fieldset>
+            <!-- radio -->
+            <!-- 4 cai name nay phai giong nhau con khac nhau thi no tick 4 cai lun-->
+            <legend>Select your occupation</legend>
+            <label for="highschool">HighSchool</label>
+            <input type="radio" name="occupation" id="highschool" id="highschool" /><br/>
+
+            <label for="highschool">University</label>
+            <input type="radio" name="occupation" id="highschool" id="university" /><br/>
+
+            <label for="highschool">Working</label>
+            <input type="radio" name="occupation" id="highschool" id="working" /><br/>
+
+            <label for="highschool">Retired</label>
+            <input type="radio" name="occupation" id="highschool" id="retired" /><br/>
+        </fieldset>
+
+        <br/>
+        <fieldset>
+            <!-- checkbox thi phan name khac nhau de tick day du  -->
+            <legend>Select Courses</legend>
+            <Label for="course_logicmath">Logic Math - 499k</Label>
+            <input type="checkbox" id="course_logicmath" name="course_logicmath" value="selected" /><br/>
+
+            <Label for="course_python">Python Basic - 799k</Label>
+            <input type="checkbox" id="course_python" name="course_python" value="selected" /><br/>
+
+            <Label for="web">Web Basic - 749k</Label>
+            <input type="checkbox" id="web" name="web" value="selected" /><br/>
+
+            <Label for="game">Game Python - 149k</Label>
+            <input type="checkbox" id="game" name="game" value="selected" /><br/>
+            
+        </fieldset>
+
+        <!-- dropdown -->
+        <br/> 
+        <label for="payment">Payment method</label>
+        <select name="payment" id="payment">
+            <option value="none">Please select</option>
+            <option value="none">Paypal</option>
+            <option value="none">Credit Card</option>
+        </select>
+
+        <br/>
+        <br/>
         <input type="submit" value="Register Now"/>
+        <input type="reset" value="Reset"/>
     </form>
 </body>
 </html>
