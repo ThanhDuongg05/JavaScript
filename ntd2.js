@@ -28,6 +28,18 @@ function saveData(){
     if(retired==true){
         sessionStorage.occupation="retired";
     }
+        var logic = document.getElementById("course_logicmath").checked;
+        var python = document.getElementById("course_python").checked;
+        var web = document.getElementById("web").checked;
+        var game = document.getElementById("game").checked;
+
+        sessionStorage.logic = logic;
+        sessionStorage.python = python;
+        sessionStorage.web = web;
+        sessionStorage.game = game;
+
+        var payment=document.getElementById("payment");
+        sessionStorage.payment=payment.value;
 }
 //ham ko xoa het du lieu
 function prefillData(){
@@ -38,7 +50,7 @@ function prefillData(){
         document.getElementById("phonenumber").value =sessionStorage.phone;
         document.getElementById("age").value =sessionStorage.age;
         
-         ntd2.js
+        
         //C1
         // if(sessionStorage.occupation=="highshcool"){
         //    sessionStorage.occupation= document.getElementById("highschool").value;
@@ -85,6 +97,23 @@ function prefillData(){
                 sessionStorage.occupation=occupationArray[i].value;
             }
         }
+        
+        // checked xem co ton tai ko la null
+        //khi dung sessionStorage thi kiem tra true phai bo vao ngoat ""
+        if(sessionStorage.logic=="true"){
+            document.getElementById("logic").checked=true;
+        }
+        if(sessionStorage.logic=="true"){
+            document.getElementById("python").checked=true;
+        }
+        if(sessionStorage.logic=="true"){
+            document.getElementById("web").checked=true;
+        }
+        if(sessionStorage.logic=="true"){
+            document.getElementById("game").checked=true;
+        }
+        
+        document.getElementById("payment").checked = sessionStorage.payment;
     }
 }
 
