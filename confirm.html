@@ -11,11 +11,19 @@
 <body>
     <h1>DLLT Form</h1>
     <h2>Confirmation Form</h2>
-
-    <p>Your name: <span id="confirm_name"></span> </p>
-    <p>Your email: <span id="confirm_email"></span> </p>
-    <p>Your phonenumber: <span id="confirm_phone"></span> </p>
-    <p>Your age: <span id="confirm_age"></span> </p>
+    <form method="post" action="https://.com/api.php">
+        <fieldset>
+            <legend>Please confirm your detail</legend>
+            <p>Your name: <span id="confirm_name"></span> </p>
+            <p>Your email: <span id="confirm_email"></span> </p>
+            <p>Your phonenumber: <span id="confirm_phone"></span> </p>
+            <p>Your age: <span id="confirm_age"></span> </p>
+            <p>Your occupation: <span id="confirm_occupation"></span></p>
+        </fieldset>
+        </br>
+        <input type="submit" value="Paynow">
+        <input id="cancel_button" type="button" value="Cancel">
+    </form>
 </body>
 
 </html>
